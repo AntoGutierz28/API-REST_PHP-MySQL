@@ -1,0 +1,14 @@
+1. Instalacion de composer
+2. Instalacion de laravel
+composer global require laravel/installer
+3. Crear proyecto 
+composer create-project laravel/laravel API-REST
+4. Arrancar el server
+php artisan serve
+5. Creacion de modelo - migracion, esquema previo a la BD  
+php artisan make:model categoria -m
+6. Migrar a la BD de database/migration
+php artisan migrate
+7. en .env se configura la conexion a la BD
+8. Agregar controlador
+php artisan make:controller categoriaControler
